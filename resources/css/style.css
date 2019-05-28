@@ -22,6 +22,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /*-------------------------------------------------*/
 /* REUSABLE COMPONENTS */
 /*-------------------------------------------------*/
@@ -86,6 +97,15 @@ h3 {
   color: rgba(0, 29, 84);
   margin-bottom: 10px;
 }
+.icon_small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: rgba(0, 29, 84);
+  font-size: 120%;
+  line-height: 120%;
+  vertical-align: middle;
+}
 
 /*----- BUTTONS -----*/
 .btn {
@@ -135,7 +155,9 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
+
 .header__text__box {
   position: absolute;
   /* width: 1140px; */
@@ -177,22 +199,24 @@ header {
 /* FEATURES */
 /*-------------------------------------------------*/
 
-.container__feature {
+.container {
   display: flex;
   color: rgba(0, 29, 84);
 }
 
-.container__feature .feature {
+.container .feature {
   width: 100%;
   display: block;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #000;
 }
 
 .feature:nth-child(1) {
   background-image: url("img/feature1.png");
 }
+
 .feature:nth-child(2) {
   background-image: url("img/feature4.png");
 }
@@ -233,4 +257,43 @@ header {
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+/*-------------------------------------------------*/
+/* STEPS */
+/*-------------------------------------------------*/
+
+.section_steps {
+  background-color: #f4f4f4;
+}
+/*-------------------------------------------------*/
+/* CITIES */
+/*-------------------------------------------------*/
+
+.city {
+  width: 25%;
+  overflow: hidden;
+  display: block;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+.city .city-feature a:link {
+  color: rgba(0, 29, 84);
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(0, 29, 84);
+  transition: border-bottom 0.2s, color 0.2s;
+}
+.city .city-feature a:hover {
+  color: rgba(117, 156, 230, 0.7);
+  border-bottom: 1px solid transparent;
 }
