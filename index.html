@@ -5,20 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Blueapron</title>
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="landing__text__box">
-        <h1>Order Our top-rated recipes today!</h1>
-        <a class="btn btn__full" href="#"> I'm hungry</a>
-        <a class="btn btn__ghost" href="#"> Show me more</a>
+      <nav>
+        <div class="row">
+          <img
+            src="resources/css/img/light_logo.png"
+            alt="urbanfood_logo"
+            class="logo"
+          />
+          <ul class="main_nav">
+            <li class="main">
+              <a href="#"> Delivery</a>
+            </li>
+            <li class="main">
+              <a href="#"> How it works</a>
+            </li>
+            <li class="main">
+              <a href="#"> Our cities</a>
+            </li>
+            <li class="main">
+              <a href="#"> Sgin up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__text__box parallax__img__1">
+        <span class="border">
+          <h1>
+            Your food is better<br />
+            when you start from <br />scratch
+          </h1>
+
+          <a class="btn btn__full" href="#"> I'm hungry</a>
+          <a class="btn btn__ghost" href="#"> Show me more</a>
+        </span>
       </div>
     </header>
+
+    <section class="section_features">
+      <div class="row">
+        <h2>
+          Feature
+        </h2>
+        <div class="container__feature">
+          <div class="feature box">
+            <h3>Freshness Guaranteed</h3>
+            <p>
+              Our boxes are cooled and insulated, so you don’t have to be home
+              to receive them.
+            </p>
+          </div>
+
+          <div class="feature box">
+            <h3>You choose your recipes</h3>
+            <p>
+              We have a broad menu, with easy 20-minute meals and more
+              challenging recipes.
+            </p>
+          </div>
+
+          <div class="feature box">
+            <h3>Different plans to fit your household and lifestyle</h3>
+            <p>
+              Choose from recipes that serve 2 or 4, and choose how many recipes
+              to get each week.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_meals">
+      <ul class="meals-showcase clearfix">
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/1.jpg"
+              alt="Korean bibimbap with egg and vegetables"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/2.jpg"
+              alt="Simple italian pizza with cherry tomatoes"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/3.jpg"
+              alt="Chicken breast steak with vegetables"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img src="/resources/css/img/4.jpg" alt="Autumn pumpkin soup" />
+          </figure>
+        </li>
+      </ul>
+      <ul class="meals-showcase clearfix">
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/5.jpg"
+              alt="Paleo beef steak with vegetables"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/6.jpg"
+              alt="Healthy baguette with egg and vegetables"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/7.jpg"
+              alt="Burger with cheddar and bacon"
+            />
+          </figure>
+        </li>
+        <li>
+          <figure class="meal-photo">
+            <img
+              src="/resources/css/img/8.jpg"
+              alt="Granola with cherries and strawberries"
+            />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section_works_section_dark">
+      <div class="row">
+        <h2>
+          How it works
+        </h2>
+        <div class="container__feature">
+          <div class="feature__1">
+            <ion-icon name="checkmark-circle" class="icon_big"></ion-icon>
+            <h3>Choose your meal</h3>
+            <p>
+              Our chef-designed recipes include balanced Mediterranean meals,
+              quick one-pan dinners, and top-rated customer favorites.
+            </p>
+          </div>
+
+          <div class="feature__2">
+            <ion-icon name="cube" class="icon_big"></ion-icon>
+            <h3>Unpack your box</h3>
+            <p>
+              We guarantee the freshness of all our ingredients and deliver them
+              in an insulated box right to your door.
+            </p>
+          </div>
+
+          <div class="feature__3">
+            <ion-icon name="restaurant" class="icon_big"></ion-icon>
+            <h3>Create magic</h3>
+            <p>
+              Following our step-by-step instructions you’ll experience the
+              magic of cooking recipes that our chefs create with your family’s
+              tastes in mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="parallax__img__2">
+      <span class="border">
+        parallax2
+      </span>
+    </div>
   </body>
 </html>

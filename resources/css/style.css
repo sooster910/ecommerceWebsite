@@ -1,3 +1,11 @@
+/*
+
+
+*/
+
+/*-------------------------------------------------*/
+/* BASIC SETUP*/
+/*-------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -11,40 +19,218 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
+/*-------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------------------------*/
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/*----- HEADING -----*/
+h1,
+h2,
+h3 {
+  /* font-size: 6rem; */
+
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 250%;
+  word-spacing: 4px;
+}
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: rgba(117, 156, 230, 0.7);
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/*----- ICONS -----*/
+.icon_big {
+  font-size: 350%;
+  display: block;
+  color: rgba(0, 29, 84);
+  margin-bottom: 10px;
+}
+
+/*----- BUTTONS -----*/
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn__full {
+  background-color: rgba(0, 29, 84);
+  border: 1px solid rgba(0, 29, 84);
+  margin-right: 15px;
+}
+.btn__ghost {
+  border: 1px solid rgba(117, 156, 230, 0.7);
+  color: rgba(117, 156, 230, 0.7);
+}
+.btn:hover,
+.btn:active {
+  /* background-color: #004cdc; */
+  background-color: rgba(117, 156, 230, 0.7);
+}
+
+.btn__full:hover,
+.btn__ful:active {
+  border: 1px solid rgba(117, 156, 230, 0.7);
+  color: rgba(0, 29, 84);
+}
+
+.btn__ghost:hover,
+.bton__ghost:active {
+  border: 1px solid rgba(117, 156, 230, 0.7);
+  /* color: rgba(0, 29, 84); */
+  color: white;
+}
+/*-------------------------------------------------*/
+/* HEADER */
+/*-------------------------------------------------*/
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url(img/landing_img.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-.landing__text__box {
+.header__text__box {
   position: absolute;
   /* width: 1140px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-h1 {
-  margin: 0;
-  /* font-size: 6rem; */
-  font-size: 250%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+.logo {
+  height: 200px;
+  width: auto;
+  float: left;
+}
+.main_nav {
+  margin-top: 80px;
+  float: right;
+  list-style: none;
+}
+.main_nav li {
+  display: inline-block;
+  margin-left: 40px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
+.main_nav li a {
+  padding: 8px 0px;
+  color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main_nav li a:hover,
+.main_nav li a:active {
+  border-bottom: 2px solid rgba(117, 156, 230, 0.7);
+}
+
+/*-------------------------------------------------*/
+/* FEATURES */
+/*-------------------------------------------------*/
+
+.container__feature {
+  display: flex;
+  color: rgba(0, 29, 84);
+}
+
+.container__feature .feature {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feature:nth-child(1) {
+  background-image: url("img/feature1.png");
+}
+.feature:nth-child(2) {
+  background-image: url("img/feature4.png");
+}
+.feature:nth-child(3) {
+  background-image: url("img/feature3.png");
+}
+
+/*-------------------------------------------------*/
+/* MEALS */
+/*-------------------------------------------------*/
+.section_meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
