@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blueapron</title>
+    <title>UrbanMeal</title>
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/quries.css" />
+    
+    <!--google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--ion icon-->
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+
     <link
       href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
       rel="stylesheet"
@@ -59,9 +72,9 @@
 
     <section class="section_features">
       <div class="row">
-        <h2>
+        <!-- <h2>
           Features
-        </h2>
+        </h2> -->
         <div class="container">
           <div class="feature box">
             <h3>Freshness Guaranteed</h3>
@@ -80,16 +93,50 @@
           </div>
 
           <div class="feature box">
-            <h3>Different plans to fit your household and lifestyle</h3>
+            <h3>Delicious, chef-designed recipes</h3>
             <p>
-              Choose from recipes that serve 2 or 4, and choose how many recipes
-              to get each week.
+              Top chef over the world provide healthy and delicious recipes.
             </p>
           </div>
         </div>
       </div>
     </section>
+    <section class="section_steps">
+      <div class="row">
+        <h2>
+          How it works
+        </h2>
+        <div class="container">
+          <div class="step box">
+            <ion-icon name="checkmark-circle" class="icon_big"></ion-icon>
+            <h3>Choose your meal</h3>
+            <p>
+              Our chef-designed recipes include balanced Mediterranean meals,
+              quick one-pan dinners, and top-rated customer favorites.
+            </p>
+          </div>
 
+          <div class="step box">
+            <ion-icon name="cube" class="icon_big"></ion-icon>
+            <h3>Unpack your box</h3>
+            <p>
+              We guarantee the freshness of all our ingredients and deliver them
+              in an insulated box right to your door.
+            </p>
+          </div>
+
+          <div class="step box">
+            <ion-icon name="restaurant" class="icon_big"></ion-icon>
+            <h3>Create magic</h3>
+            <p>
+              Following our step-by-step instructions you’ll experience the
+              magic of cooking recipes that our chefs create with your family’s
+              tastes in mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section_meals">
       <ul class="meals-showcase clearfix">
         <li>
@@ -158,68 +205,31 @@
       </ul>
     </section>
 
-    <section class="section_steps">
-      <div class="row">
-        <h2>
-          How it works
-        </h2>
-        <div class="container">
-          <div class="step box">
-            <ion-icon name="checkmark-circle" class="icon_big"></ion-icon>
-            <h3>Choose your meal</h3>
-            <p>
-              Our chef-designed recipes include balanced Mediterranean meals,
-              quick one-pan dinners, and top-rated customer favorites.
-            </p>
-          </div>
-
-          <div class="step box">
-            <ion-icon name="cube" class="icon_big"></ion-icon>
-            <h3>Unpack your box</h3>
-            <p>
-              We guarantee the freshness of all our ingredients and deliver them
-              in an insulated box right to your door.
-            </p>
-          </div>
-
-          <div class="step box">
-            <ion-icon name="restaurant" class="icon_big"></ion-icon>
-            <h3>Create magic</h3>
-            <p>
-              Following our step-by-step instructions you’ll experience the
-              magic of cooking recipes that our chefs create with your family’s
-              tastes in mind.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section_cities">
       <div class="row">
-        <h2>We're currently in these cities</h2>
+        <h2>Explore UrbanMeal in other cities</h2>
       </div>
       <div class="row container">
         <div class="city box">
-          <img src="/resources/css/img/lisbon-3.jpg" alt="Lisbon" />
+          <img src="/resources/css/img/Newyork.gif" alt="NewYork" />
 
-          <h3>Lisbon</h3>
+          <h3>New York</h3>
           <div class="city-feature">
             <i class="ion-ios-person icon_small"></i>
             1600+ happy eaters
           </div>
           <div class="city-feature">
-            <i class="ion-ios-star icon_small"></i>
+                <ion-icon name="people" class="icon_small"></ion-icon>
             60+ top chefs
           </div>
           <div class="city-feature">
             <ion-icon name="logo-twitter" class="icon_small"></ion-icon>
-            <a href="#">@urbanMeal_lx</a>
+            <a href="#">@urbanMeal_ny</a>
           </div>
         </div>
 
         <div class="city box">
-          <img src="/resources/css/img/san-francisco.jpg" alt="San Francisco" />
+          <img src="/resources/css/img/san-fran.jpg" alt="San Francisco" />
           <h3>San Francisco</h3>
           <div class="city-feature">
             <i class="ion-ios-person icon_small"></i>
@@ -236,8 +246,8 @@
         </div>
 
         <div class="city box">
-          <img src="/resources/css/img/berlin.jpg" alt="Berlin" />
-          <h3>Berlin</h3>
+          <img src="/resources/css/img/Paris.jpg" alt="Paris" />
+          <h3>Paris</h3>
           <div class="city-feature">
             <i class="ion-ios-person icon_small"></i>
             2300+ happy eaters
@@ -248,7 +258,7 @@
           </div>
           <div class="city-feature">
             <ion-icon name="logo-twitter" class="icon_small"></ion-icon>
-            <a href="#">@urbanMeal_berlin</a>
+            <a href="#">@urbanMeal_paris</a>
           </div>
         </div>
 
@@ -270,10 +280,229 @@
         </div>
       </div>
     </section>
-    <div class="parallax__img__2">
-      <span class="border">
-        parallax2
-      </span>
-    </div>
+
+    <section class="section_testimonials">
+      <div class="row">
+        <h2>What people say about us</h2>
+      </div>
+      <div class="row container">
+        <div class="testimonial">
+          <blockquote>
+            UrbanMeal is one of the easiest, most enjoyable cooking experiences.
+            The food is delicious, fun, different, and creative. I absolutely
+            LOVE it.
+            <cite
+              ><img src="/resources/css/img/customer-1.jpg" />Alberto
+              Duncan</cite
+            >
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            What defines them is interesting, unique and excellent tasting meals
+            with fresh ingredients. We have had no problems with freshness, and
+            I sense that some people may live in areas where delivery services
+            are inferior. We get FedEx deliveries on time and there have been no
+            problems
+            <cite
+              ><img src="/resources/css/img/customer-2.jpg" />Joana Silva</cite
+            >
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            I was blown away by the quality when I opened the box - that's what
+            hooked me. Recipes are restaurant quality. Food is consistently top
+            quality. Any problems are dealt with immediately and customer
+            service is responsive within hours.
+            <cite
+              ><img src="/resources/css/img/customer-3.jpg" />Milton
+              Chapman</cite
+            >
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_plans">
+      <div class="row">
+        <h2>Choose your plans</h2>
+      </div>
+      <div class="row container">
+        <div class="plan-box-wrapper">
+          <div class="plan-box">
+            <div>
+              <h3>Premium</h3>
+              <p class="plan-price">$399 <span>/ month</span></p>
+              <p class="plan-price-meal">
+                That's only 13.30$ per meal
+              </p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>1
+                  meal every day
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Order
+                  24/7
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon
+                  >Access to newest creations
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Free
+                  delivery
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn__full">Sign up now</a>
+            </div>
+          </div>
+        </div>
+        <div class="plan-box-wrapper">
+          <div class="plan-box">
+            <div>
+              <h3>Pro</h3>
+              <p class="plan-price">$149 <span>/ month</span></p>
+              <p class="plan-price-meal">That's only 14.90$ per meal</p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>1
+                  meal 10 days/month
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Order
+                  24/7
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon
+                  >Access to newest creations
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Free
+                  delivery
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn__full">Sign up now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-box-wrapper">
+          <div class="plan-box">
+            <div>
+              <h3>Starter</h3>
+              <p class="plan-price">$19 <span>/ meal</span></p>
+              <p class="plan-price-meal">&nbsp;</p>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>1
+                  meal
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Order
+                  from 8 am to 12 pm
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>
+                  &nbsp
+                </li>
+                <li>
+                  <ion-icon name="checkmark" class="icon_small"></ion-icon>Free
+                  delivery
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn__full">Sign up now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_contact">
+      <div class="row">
+        <h2>We're happy to hear from you</h2>
+      </div>
+      <div class="row contact-wrapper">
+        <div class="contact contact-img">
+          <h3>Enjoy your cooking</h3>
+        </div>
+        <div class="contact-form-wrapper">
+          <form method="post" action="#" class="contact contact-form">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter your fullname"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Message"
+              rows="6"
+              required
+            ></textarea>
+
+            <input type="submit" class="form-control" value="Send it!" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row container">
+        <div class="footer-contents">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contents">
+          <ul class="social-links">
+            <li>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-googleplus"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          Copyright &copy 2019 by UrbanMeal. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
