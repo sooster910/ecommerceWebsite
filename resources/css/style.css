@@ -664,15 +664,32 @@ footer p {
   .container {
     flex-direction: column;
   }
+  h1 {
+    font-size: 220%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .main_nav {
+    display: none;
+  }
   .header__text__box {
     padding: 0 4%;
   }
+  .step {
+    text-align: center;
+  }
+  .icon_big {
+    text-align: center;
+    display: inline-block;
+  }
   .city {
     width: 100%;
+    text-align: center;
   }
   .city img {
-    width: 80%;
-    height: 250px;
+    width: 60%;
+    height: 200px;
   }
 
   .contact-wrapper {
@@ -680,10 +697,25 @@ footer p {
   }
   .contact-img {
     width: 100%;
-    display: inline-block;
+    height: 120px;
   }
   .contact-form-wrapper {
     width: 100%;
+  }
+  .plan-box-wrapper {
+    margin-left: 0;
+  }
+  .plan-box {
+    margin-bottom: 20px;
+  }
+  .social-links {
+    text-align: center;
+  }
+  .footer-contents {
+    margin-bottom: 20px;
+  }
+  footer p {
+    margin-top: 0;
   }
 }
 
