@@ -32,28 +32,38 @@
     />
   </head>
   <body>
+    <!----  header start  ----->
+
     <header>
       <nav>
         <div class="row">
           <img
             src="resources/css/img/light_logo.png"
-            alt="urbanfood_logo"
+            alt="urbanmeal_logo"
             class="logo"
           />
-          <ul class="main_nav ">
+          <img
+            src="resources/css/img/logo.png"
+            alt="urbanmeal_logo"
+            class="logo-black"
+          />
+          <ul class="main_nav js--main-nav">
             <li class="main">
-              <a href="#"> Delivery</a>
+              <a href="#steps"> How it works</a>
             </li>
             <li class="main">
-              <a href="#"> How it works</a>
+              <a href="#cities"> Expolore </a>
             </li>
             <li class="main">
-              <a href="#"> Our cities</a>
+              <a href="#plans"> Plans</a>
             </li>
             <li class="main">
-              <a href="#"> Sgin up</a>
+              <a href="#contact"> Contact us</a>
             </li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon i">
+            <i class="ion-md-list"></i>
+          </a>
         </div>
       </nav>
 
@@ -64,15 +74,17 @@
             when you start from <br />scratch
           </h1>
 
-          <a class="btn btn__full" href="#"> Let's order</a>
-          <a class="btn btn__ghost" href="#"> Show me more</a>
+          <a class="btn btn__full js--scroll-to-plan" href="#plans">
+            Let's order</a
+          >
+          <a class="btn btn__ghost" href="#steps"> Show me more</a>
         </span>
       </div>
     </header>
+    <!----------- section features start---------------->
 
-    <section class="section_features">
+    <section class="section_features" id="features">
       <div class="row container">
-        <!-- <div class="container">-->
         <div class="feature box">
           <h5>Freshness Guaranteed</h5>
         </div>
@@ -87,7 +99,10 @@
       </div>
       <!-- </div> -->
     </section>
-    <section class="section_steps">
+
+    <!----------- section steps start---------------->
+
+    <section class="section_steps js--section--steps" id="steps">
       <div class="row">
         <h2>
           How it works
@@ -123,7 +138,10 @@
         </div>
       </div>
     </section>
-    <section class="section_meals">
+
+    <!----------- section meals start---------------->
+
+    <section class="section_meals" id="meals">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -191,7 +209,9 @@
       </ul>
     </section>
 
-    <section class="section_cities">
+    <!----------- section cities start---------------->
+
+    <section class="section_cities" id="cities">
       <div class="row">
         <h2>Explore UrbanMeal in other cities</h2>
       </div>
@@ -267,7 +287,9 @@
       </div>
     </section>
 
-    <section class="section_testimonials">
+    <!----------- section testimonials start---------------->
+
+    <section class="section_testimonials" id="testimonials">
       <div class="row">
         <h2>What people say about us</h2>
       </div>
@@ -310,7 +332,9 @@
       </div>
     </section>
 
-    <section class="section_plans">
+    <!----------- section plans start---------------->
+
+    <section class="section_plans js--section-plans" id="plans">
       <div class="row">
         <h2>Choose your plans</h2>
       </div>
@@ -416,8 +440,9 @@
         </div>
       </div>
     </section>
+    <!----------- section contact start---------------->
 
-    <section class="section_contact">
+    <section class="section_contact" id="contact">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -455,6 +480,8 @@
       </div>
     </section>
 
+    <!----- footer start ------>
+
     <footer>
       <div class="row container">
         <div class="footer-contents">
@@ -490,5 +517,9 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
   </body>
 </html>
